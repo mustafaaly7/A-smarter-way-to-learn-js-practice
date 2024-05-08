@@ -41,3 +41,16 @@
 // alert(book)
 
 
+// document.write("yeah I can write html through Js")
+// document.write("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬")
+
+// alert("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬")
+
+
+
+// JS CHAPTER 3
+
+
+
+
+
