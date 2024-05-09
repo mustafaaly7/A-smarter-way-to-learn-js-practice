@@ -169,6 +169,41 @@
 // alert(difference + "seconds have passed since 1st jan 2015 to 5 dec 2015")
 
 
+// var time = new Date()
+// // alert(time)
+// var hour = time.getHours()
+// var minutes = time.getMinutes()
+// var  seconds = time.getSeconds()
+// alert(hour +":" + minutes +":" + seconds)
+
+
+// var oldHour = new Date("1 dec 2015 23:08")
+// var newHour = new Date("1 dec 2015 22:08")
+
+// var difference = oldHour - newHour;
+//  var milliSeconds = Math.floor(difference / (1000*60*60))
+// // alert(milliSeconds)
+// alert("current Date : " + oldHour + "\n" + "1 hour ago it was " + newHour )
+
+
+
+
+
+// program / application to find your age <----------
+
+
+// var userInput = prompt("Enter your DOB" , "28 march 2004")
+// var dob = new Date(userInput) // prompt returns string not a date object so we have to make a  new var to store that value as dob aka date of birth
+// var entry = new Date();
+// var milliSeconds = entry - dob
+// var age = Math.floor(milliSeconds / (1000*60*60*24*365))
+// alert(age)
+
+
+
+
+
+
 
 
 
