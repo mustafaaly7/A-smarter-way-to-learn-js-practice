@@ -139,10 +139,34 @@
 // document.write("milliSeconds since 1970  : " + pastTime + "<br>")
 // document.write("Seconds since 1970 : " + pastMinutes + "<br>")
 
+// var hours = new Date().getHours()
+// // alert(hours)
+// if(hours <= 12){
+//     alert("Its " + hours + " Am")
+// }else{
+//     alert("Its " + hours +"PM")
+
+// }
+
+
+// var laterDate = new Date()
+
+// alert("Later date :"+ laterDate)
 
 
 
+// var oldDate = new Date("15 june 2015")
+// var today = new Date()
+// var milliseconds = today - oldDate;
+// var difference = Math.floor(milliseconds / (1000*60*60*24));
+// alert(difference + " days passed since 1st Ramadan in June 2015")
 
+
+// var oldDate = new Date("1 jan 2015 ")
+// var newDate = new Date("5 dec 2015")
+// var milliSeconds = newDate - oldDate ; 
+// var difference = Math.floor(milliSeconds / (1000*60))
+// alert(difference + "seconds have passed since 1st jan 2015 to 5 dec 2015")
 
 
 
