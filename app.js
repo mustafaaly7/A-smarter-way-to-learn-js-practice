@@ -132,6 +132,15 @@
 
 
 
+// var currentDate = new Date()
+// var pastTime =  currentDate.getTime()
+// var pastMinutes = pastTime/(1000*60*60)
+// document.write("Current Date : " + currentDate + "<br>")
+// document.write("milliSeconds since 1970  : " + pastTime + "<br>")
+// document.write("Seconds since 1970 : " + pastMinutes + "<br>")
+
+
+
 
 
 
