@@ -83,15 +83,52 @@
 // ----- > JS chapter 4
 
 
+// var userName = "Mustafa"
+// var userEmail = null;
+// var flag = true ; 
+
+// legal variables name 
+
+// var name = "mustafa"
+// var userName = "ali"
+// var user1 = "No"
+// var _user = "yes"
+// var user_name = "ye"
 
 
 
 
 
+// -----> Chapter 31-34 
 
 
 
+// var now = new Date()
+// console.log(now)
+// var months = ["jan" , "feb" ,"march","april","may","june","july","aug","sep","oct","nov","dec"]
+// var month = new Date().getMonth()
+// console.log(month);
 
+// alert("Current Month : "+ months[month])
+
+
+// var days = ["sun","mon","tue","wed","thu","fri","sat"];
+// var now = new Date().getDay()
+
+// alert("current Day : " +days[now])
+// if(now == "4"){
+//     alert("funday ")
+// }else{
+//     alert("grind nigga")
+// }
+
+
+// var writtenNumbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty", "thirty-one"];
+
+
+
+// var day = new Date().getDate()
+// alert("today's date is : " + writtenNumbers[day])
 
 
 
