@@ -206,8 +206,28 @@
 // now.setFullYear(yearNow - age)
 // alert("your age is " + age +"\n"+ "you're Borned in " + now)
 
+// ------> K- Electric Bill Generator 
 
-
+// var months = ["jan","feb","march","april","may","june","july","august","september","october","november","december"]
+// function userInfo(){
+//     var userName = document.getElementById("userName")
+//     // alert(userName.value)
+//     var month = new Date().getMonth()
+//     var units =  Math.floor(Math.random()*500) ; 
+//     var chargePerunit = 16 ; 
+//     var netAmount = units * chargePerunit;
+//     var latePayment = 350;
+//     var grossAmountLate = 350 + netAmount
+// // alert(months[month] + units )
+// document.write("<h1> K Electric Bill </h1>")
+// document.write(" <h4> Customer Name : " + userName.value)
+// document.write(" <br> Month : " + months[month])
+// document.write("<br> Number of Units : " + units)
+// document.write("<br> Charge Per Unit " + chargePerunit)
+// document.write("<br> Net Amount Payable (within Due Date) :" + netAmount)
+// document.write("<br> late Amount Surcharge " + latePayment)
+// document.write("<br> Gross Amount Payable (after Due Date) " + grossAmountLate)
+// }
 
 
 
