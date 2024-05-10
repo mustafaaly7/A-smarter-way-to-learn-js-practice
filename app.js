@@ -177,17 +177,10 @@
 // alert(hour +":" + minutes +":" + seconds)
 
 
-// var oldHour = new Date("1 dec 2015 23:08")
-// var newHour = new Date("1 dec 2015 22:08")
-
-// var difference = oldHour - newHour;
-//  var milliSeconds = Math.floor(difference / (1000*60*60))
-// // alert(milliSeconds)
-// alert("current Date : " + oldHour + "\n" + "1 hour ago it was " + newHour )
-
-
-
-
+// var time = new Date();
+// var timeHour = time.getHours()
+//  time.setHours(timeHour - 1)
+// alert( "Current Time :" + new Date() + "\n" +"One Hour Before : " + time)
 
 // program / application to find your age <----------
 
@@ -198,6 +191,41 @@
 // var milliSeconds = entry - dob
 // var age = Math.floor(milliSeconds / (1000*60*60*24*365))
 // alert(age)
+
+// var year = new Date();
+// var now = new Date();
+// var yearNow = now.getFullYear()
+// now.setFullYear(yearNow - 100)
+// alert("Year Now " + year + "\n" + "100 years ago " + now)
+
+
+// var userInput = prompt("Enter your age ")
+// var age = userInput
+// var now = new Date();
+// var yearNow = now.getFullYear()
+// now.setFullYear(yearNow - age)
+// alert("your age is " + age +"\n"+ "you're Borned in " + now)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
