@@ -242,7 +242,12 @@
 
 // }
 
-
+// function greet(){
+//     var fn = document.getElementById("fn")
+//     var sn = document.getElementById("sn")
+//     var fullName = fn.value + sn.value;
+//     alert("hello " +  fullName)
+// }
 
 
 
