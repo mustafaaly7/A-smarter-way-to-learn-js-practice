@@ -232,9 +232,15 @@
 
 
 
+// -----> Chapter 35-38
 
 
+// function time(){
+// var currentTime = new Date()
+// alert(currentTime)
 
+
+// }
 
 
 
