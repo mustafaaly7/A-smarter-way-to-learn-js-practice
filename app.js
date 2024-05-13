@@ -249,14 +249,44 @@
 //     alert("hello " +  fullName)
 // }
 
+// function add(){
+//     var num1 = +prompt("Enter First Number")
+//     var num2 = +prompt("Enter Second Number")
+// var addition = num1 + num2 ;
+// alert(addition)
+// }
+
+// add();
 
 
+// var userInput1 = +prompt("Enter 1st Number")
+// var userInput2 = +prompt("Enter 2nd Number")
+// var userInput3 = prompt("Enter a Operator")
 
+// function calculator(num1, num2 , operator){
+//  var result ; 
+//     if( operator == "+"){
+//     result = num1 + num2 
+    
+//  }
+//  else if( operator == "-"){
+//     result = num1 - num2 
+    
+//  }
+//  else if ( operator == "*"){
+//     result = num1 * num2 
+    
+//  }
+//  else if( operator == "/"){
+//     result = num1 / num2 
+    
+//  }else{
+//     alert("Enter Correct Operator")
+//  }
+//  alert(result)
+// // return result;
 
-
-
-
-
+// }
 
 
 
