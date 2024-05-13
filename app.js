@@ -293,6 +293,37 @@
 
 
 
+// var userInput = +prompt("Enter Any Number")
+// function square(num1){
+// var square = num1 * num1 ;
+// // console.log(square);
+// return square;
+
+
+// }
+// square(userInput)
+// var result = square(userInput);
+
+// console.log(result);
+
+
+// ------> factorial of a number (i.e factorial of 5 =5x4x3x2x1)
+
+
+// var userInput = +prompt("Enter Any Number")
+
+// function factorial (n){
+// var result = 1 ; // initialize var result at 1 
+// for(var i = 2 ; i<=n ; i++){
+// result *= i; // then append it with the value means  1 *2 = 2 then as loop goes on 2*3 = 6 then 6*4  etc it appends the value with the current one but with multiply
+
+// }
+
+// console.log(result);
+
+// }
+
+// factorial(userInput)
 
 
 
