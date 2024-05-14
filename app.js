@@ -379,8 +379,69 @@
 // console.log(arr);
 // }
 
-// ----------> Write a nested function that computes hypotenuse of a 
-// right angle triangle.  
+// Q 8 ----------> Write a nested function that computes hypotenuse of a 
+// right angle triangle.   ( WITH PARAMETER AND ARGUMENTS)
+
+// function calculateHypotenuse (userInput1  ,userInput2){
+
+// function square (x){
+//     return x * x;
+// }
+// var baseSquared = square(base)
+// var PerpendicularSquared = square(Perpendicular)
+
+// var sum = baseSquared + PerpendicularSquared;
+// var hypotenuse = Math.sqrt(sum)
+// return hypotenuse;
+
+// }
+// var base = +prompt("Enter Base")
+// var Perpendicular = +prompt("Enter Perpendicular")
+
+// var output = calculateHypotenuse(base , Perpendicular);
+// console.log(output);
+
+
+
+// Q8----------> Write a nested function that computes hypotenuse of a 
+// right angle triangle.   ( WITHOUT PARAMETER AND ARGUMENTS)
+
+// function calculateHypotenuse (){
+//     var base = +prompt("Enter Base")
+//     var Perpendicular = +prompt("Enter Perpendicular")
+  
+//     function square (x){
+//         return x * x;
+//     }
+//     var baseSquared = square(base)
+//     var PerpendicularSquared = square(Perpendicular)
+    
+//     var sum = baseSquared + PerpendicularSquared;
+//     var hypotenuse = Math.sqrt(sum)
+//     return hypotenuse;
+    
+//     }
+    
+//     var output = calculateHypotenuse();
+//     console.log(output);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
