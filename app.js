@@ -326,5 +326,61 @@
 // factorial(userInput)
 
 
+// var start = +prompt("Enter Starting number ")
+// var end = +prompt("Enter ending number ")
+
+// function counting (num1 , num2){
+// for(i=num1 ; i<= num2; i++){
+//     console.log(i);
+// }
+
+
+
+// }
+
+// counting(start,end)
+
+
+// ----------------> insertion of element in array DSA in any position Aka splice method in array 
+
+// var arr = [10,30,40,50,60]
+// console.log(arr);
+// var value = 20
+// var position = 1
+
+// for(var i = arr.length-1 ; i>=position ;i--){
+//        arr[i+1]= arr[i] 
+//         if(i == position){
+//             arr[i]= value
+//         }
+    
+// }
+// console.log(arr);
+
+// ------> now we can perform the above insertion of element code with splice method
+
+// var items = [10,20,30,40,60]
+// items.splice(4,0,50) // ( index number where u want to add  the value ,how many u want to delete , te value u want to add)
+// console.warn(items);
+
+
+// now make that insertion element Algorithm bit dynamic 
+// function addValue(){
+// var arr =[10,20,30,40]
+// var value = document.getElementById("value").value
+// var position =document.getElementById("position").value
+// for( var i = arr.length-1 ; i>= 0 ; i--){
+//     if(i>=position){
+//         arr[i+1] = arr[i]
+//     }if(i == position){
+//         arr[i] = value
+//     }
+// }
+// console.log(arr);
+// }
+
+// ----------> Write a nested function that computes hypotenuse of a 
+// right angle triangle.  
+
 
 
