@@ -427,15 +427,68 @@
     
 
 
+// square and cubes 
+// ------> square 
+// var number =5 
+// var square = number ** 2;
+// console.log(square);
+// ------> cube 
+// var cube = number ** 3; // means multiply three times to the same number
+// console.log(cube);
+// var fourthExpo = number ** 4;
+// console.log(fourthExpo);
+
+// let number = 5;
+// let cube = Math.pow(number, 3); // Base number, exponent (power of 3) math.power (number ki power 3) (number,power kitni hai)
+// console.log(cube); // Output: 125 (5 x 5 x 5)
+
+// ---------------> Area of Rectangle through Variables in argument
+// var w = +prompt("width?")
+// var h = +prompt("Height?")
+
+// function area (width,height){
+// var A = width * height;
+// console.log("Area of rectangle is ", A);
+
+// }
+
+// area(w,h)
 
 
 
+// --------------> area of rectangle without variable in argument direct value
+
+// function area (width,height){
+// var A = width * height;
+// console.log("Area of rectangle is ", A);
+
+// }
+
+// area(5,6)
 
 
+// ----------------> Write a JavaScript function that checks whether a passed 
+// string is palindrome or not?  
+var userinput = prompt("Check words to see if its palindrome","Maham")
+function ispalindrome(str){
+var alphaNumericstr = str.replace(/[^A-Za-z0-9]/g,'').toLowerCase();
 
+var reverse = alphaNumericstr.split('').reverse().join('');
+var result = alphaNumericstr === reverse;
+// if(result ==  true){
+//     console.log("working");
+//     return result
+    
+// }else{
+//     console.log("not true");
+//     return result
+// }
+return alphaNumericstr === reverse
 
+}
 
-
+var output = ispalindrome(userinput);
+console.log(output);
 
 
 
