@@ -469,12 +469,37 @@
 
 // ----------------> Write a JavaScript function that checks whether a passed 
 // string is palindrome or not?  
-var userinput = prompt("Check words to see if its palindrome","Maham")
-function ispalindrome(str){
-var alphaNumericstr = str.replace(/[^A-Za-z0-9]/g,'').toLowerCase();
+// var userinput = prompt("Check words to see if its palindrome","Maham")
+// function ispalindrome(str){
+// var alphaNumericstr = str.replace(/[^A-Za-z0-9]/g,'').toLowerCase();
 
-var reverse = alphaNumericstr.split('').reverse().join('');
-var result = alphaNumericstr === reverse;
+// var reverse = alphaNumericstr.split('').reverse().join('');
+// var result = alphaNumericstr === reverse;
+// // if(result ==  true){
+// //     console.log("working");
+// //     return result
+    
+// // }else{
+// //     console.log("not true");
+// //     return result
+// // }
+// return alphaNumericstr === reverse
+
+// }
+
+// var output = ispalindrome(userinput);
+// console.log(output);
+
+
+
+// ----------------> Write a JavaScript function that checks whether a passed 
+// string is palindrome or not? with if else   
+// var userinput = prompt("Check words to see if its palindrome","Maham")
+// function ispalindrome(str){
+// var alphaNumericstr = str.replace(/[^A-Za-z0-9]/g,'').toLowerCase(); // this will replace all the special characters
+
+// var reverse = alphaNumericstr.split('').reverse().join('');
+// var result = alphaNumericstr === reverse;
 // if(result ==  true){
 //     console.log("working");
 //     return result
@@ -483,13 +508,12 @@ var result = alphaNumericstr === reverse;
 //     console.log("not true");
 //     return result
 // }
-return alphaNumericstr === reverse
+// // return alphaNumericstr === reverse
 
-}
+// }
 
-var output = ispalindrome(userinput);
-console.log(output);
-
+// var output = ispalindrome(userinput);
+// console.log(output);
 
 
 
