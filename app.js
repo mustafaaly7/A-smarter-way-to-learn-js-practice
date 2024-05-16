@@ -471,7 +471,7 @@
 // string is palindrome or not?  
 // var userinput = prompt("Check words to see if its palindrome","Maham")
 // function ispalindrome(str){
-// var alphaNumericstr = str.replace(/[^A-Za-z0-9]/g,'').toLowerCase();
+// var alphaNumericstr = str.replace(/[^A-Za-z0-9]/g,'').toLowerCase(); // this will replace all the special characters with "" khali jaga mtlb
 
 // var reverse = alphaNumericstr.split('').reverse().join('');
 // var result = alphaNumericstr === reverse;
@@ -492,11 +492,12 @@
 
 
 
+
 // ----------------> Write a JavaScript function that checks whether a passed 
 // string is palindrome or not? with if else   
 // var userinput = prompt("Check words to see if its palindrome","Maham")
 // function ispalindrome(str){
-// var alphaNumericstr = str.replace(/[^A-Za-z0-9]/g,'').toLowerCase(); // this will replace all the special characters
+// var alphaNumericstr = str.replace(/[^A-Za-z0-9]/g,'').toLowerCase(); // this will replace all the special characters with "" khali jaga mtlb
 
 // var reverse = alphaNumericstr.split('').reverse().join('');
 // var result = alphaNumericstr === reverse;
@@ -516,7 +517,50 @@
 // console.log(output);
 
 
+// ------> Write a JavaScript function that accepts a string as a  parameter and converts the first letter of each word of the   string in upper case. 
 
+// var userInput = prompt("Enter a word or sentence")
+
+// function capitalized(str){
+//     var input = str.split(" ") // converts the string into array for eg str = Mustafa Ali that will convert it into str = [mustafa,ali]
+//     for(var i = 0 ; i< input.length ; i++){
+// input[i] = input[i].charAt(0).toUpperCase()+ input[i].slice(1) // character at 0 index to upper case then concade it with the remaining value of that specific index in  array means M + ustafa 
+
+
+//     }
+// var capital = input.join(" ") // convert that array into string again 
+// return capital;
+
+// }
+// var output = capitalized(userInput)
+// console.log(output);
+
+// ----------------> Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. 
+  
+// function result(){
+//     var userInput = document.getElementById("input").value
+//     var words = userInput.split(" ")
+// var longestWord ;
+// var maxlength = 0;
+
+// for(var i =0; i< words.length ; i++){
+//     var word = words[i]
+
+//     // console.log(word);
+//     if(word.length > maxlength){
+//         longestWord = word
+//          maxlength = word.length
+//     }
+// }
+// alert("The longest word in your given sentence is " + longestWord)
+
+// // return longestWord
+
+// // console.log(longestWord );
+//     // console.log(userInput.value);
+// }
+
+// // var output = result()
 
 
 
