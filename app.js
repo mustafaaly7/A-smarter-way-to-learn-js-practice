@@ -586,12 +586,25 @@
 // var output = counting(userInput1 , userInput2);
 // console.log("the amount of times " + userInput2 + " appears in "+ userInput1 + "is "+ output);
 
+// -----> Create 2 functions that calculate properties of a circle, using the definitions here.
 
+// var userInput = +prompt ("Enter Radius")
 
+// function  calcCircumference(radius){
+//     circumference = 2 * 22/7 * radius
+//     function  calcArea (radius){
+//         var area = Math.PI * Math.pow(radius , 2)
+//         // console.log("The Area of Circle is " ,area);
+//         return area
+//     }
+    
+//     console.log("the circumference of a circle is : " + Math.floor(circumference)  + "\n The area of circle is :" , Math.round (calcArea(userInput)) );
 
+// }
 
-
-
+// var output = calcCircumference(userInput)
+//  both above and below way work to call a function and to work
+// calcCircumference(userInput)
 
 
 
