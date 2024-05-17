@@ -642,10 +642,18 @@
 
 
 
+// ---> Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter value in browser.
+
+// function increase(){
+//     var input = document.getElementById("input")
+//     input.value ++;
+// }
 
 
-
-
+// function decrease(){
+//     var input = document.getElementById("input")
+//     input.value = input.value -1; // same as input.value -- 
+// }
 
 
 
