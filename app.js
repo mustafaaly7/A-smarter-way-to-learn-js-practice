@@ -607,6 +607,38 @@
 // calcCircumference(userInput)
 
 
+// --------------> Chapter 43-48
+
+
+// function purchase(){
+//     alert("thanks for purchasing :D")
+// }
+
+
+// ------> to remove a row on delete button
+
+// function remove(value){
+//     var tr = document.getElementsByTagName("tr")
+//     console.log(tr.length , tr );
+// tr[value].remove()
+
+// }
+
+// ----------> toggle change image
+
+
+// function change(imgEl){
+//     var input = imgEl.src
+//     // console.log(input);
+//     imgEl.src = "./images/images.jpg"
+// }
+
+
+// function change1(imgEl){
+// var input = imgEl.src
+// imgEl.src ="./images/Apple+iPhone+15+Pro+Max_-_24629.webp"
+
+// }
 
 
 
