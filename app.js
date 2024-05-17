@@ -566,3 +566,43 @@
 
 
 
+// ---------> Write a JavaScript function that accepts two arguments, a  string and a letter and the function will count the number of occurrences of the specified letter within the string. 
+
+
+// var userInput1 = prompt("Enter the sentence").toLocaleLowerCase()
+// var userInput2 = prompt("Enter the letter").toLocaleLowerCase()
+// function counting(str ,letter){
+//     var count = 0;
+//     for(var i =0 ; i< str.length ; i++){
+//         if(str[i] == letter){
+//             count  ++ ; // means add if count is 1 it will make it two 
+//             // count = count +1; // it will also do the same as above if we do count = count+2 ; it will add twice 
+
+//         }
+//     }
+//     return count
+// }
+
+// var output = counting(userInput1 , userInput2);
+// console.log("the amount of times " + userInput2 + " appears in "+ userInput1 + "is "+ output);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
