@@ -657,5 +657,42 @@
 
 
 
+// ------------------> chp 49 52
+// ------------> form submmission
+
+// function getData(){
+// var firstName = document.getElementById("fN").value
+// var lastName = document.getElementById("lN").value
+// var phoneNumber = document.getElementById("phn").value
+// var dob = document.getElementById("date").value
+// // console.log(firstName, lastName,phoneNumber,dob);
+// document.write("<h1> Your Full name is :" + firstName + lastName +"<br> Your phone number is :" +phoneNumber + "<br> your date of birth is :" + dob )
+
+// }
+
+
+
+function seemore(el){
+    // console.log(el.innerHTML);
+var para = document.getElementById("para")
+    if(el.innerHTML == "Read More"){
+        para.innerHTML = "Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read more” button, full detail of that particular item will be displayed."
+el.innerHTML ="Read Less"
+// para.innerHTML
+
+    }else if (el.innerHTML =="Read Less"){
+        para.innerHTML = "Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look."
+        el.innerHTML = "Read More"
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
