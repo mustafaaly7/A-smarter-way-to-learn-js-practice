@@ -672,19 +672,75 @@
 
 
 
-function seemore(el){
-    // console.log(el.innerHTML);
-var para = document.getElementById("para")
-    if(el.innerHTML == "Read More"){
-        para.innerHTML = "Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read more” button, full detail of that particular item will be displayed."
-el.innerHTML ="Read Less"
-// para.innerHTML
+// function seemore(el){
+//     // console.log(el.innerHTML);
+// var para = document.getElementById("para")
+//     if(el.innerHTML == "Read More"){
+//         para.innerHTML = "Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read more” button, full detail of that particular item will be displayed."
+// el.innerHTML ="Read Less"
+// // para.innerHTML
 
-    }else if (el.innerHTML =="Read Less"){
-        para.innerHTML = "Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look."
-        el.innerHTML = "Read More"
-    }
-}
+//     }else if (el.innerHTML =="Read Less"){
+//         para.innerHTML = "Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look."
+//         el.innerHTML = "Read More"
+//     }
+// }
+
+
+
+
+
+// THE DOM 18 march 2024
+// console.log(document.childNodes); // this will show junkifact aswell document means HTMl uske andar 2 child hote hain 
+// console.log(document.childNodes[1].childNodes); // ab iske output mai array ky andar text show krrha hai which is the space we made in html js usse bh element count krta hai 
+// -----> better than childnode which wont show junkifacts like doctype and text etc
+// console.log(document.children[0].children[1].children); // p#para means p tag and its id para
+// console.log(document.children[0].children[1].children[0].innerHTML) // now we targe whats in that para tag 
+
+
+
+
+
+
+// --------------> HOW TO GET HTML TAGS THRU DOCUMENT AND FROM PARENT OR DIV OR SECTION OR CONTAINER
+
+// var parasOut = document.getElementsByTagName('p') // this will get all the elements inside the document file means HTML in our outside div 
+// console.log(parasOut.length);
+
+// var papa = document.getElementById("parent")
+// console.log(papa.lastElementChild); // this will get thhe last element child means any html tag or element which is not a junkartitfact
+// console.log(papa.lastChild); // this will get the last child whether it is a element or junk artifact like text etc
+// console.log(papa.firstChild);// this will get thhe first  child means first child whether it  is element or a junkartitfact
+// console.log(papa.firstElementChild);// this will get thhe first element child means any html tag or element which is not a junkartitfact
+// console.log(papa.lastElementChild.style.backgroundColor = "red"); // now u can style aswell or get any value aswell or attribute
+// console.log(papa.firstElementChild.innerHTML = "Not Hello");// u can also change the innerhtml of that tag
+
+
+
+
+
+
+//-------> we cant target middle child of the specific child of a parent div or container etc we can directly acces last and first child to access middle child we have to use 
+// var papa = document.getElementById("parent")
+// console.log(papa.firstElementChild.nextElementSibling); // first elem will get the first child of that parent and next sibling means next element after first child 
+// console.log(papa.lastElementChild.previousElementSibling);//this will get previous elem sibling of that last parent child 
+
+
+
+
+// ----> tag name maloom krne ky liye always show in capital like DIV H1 P
+// var papa = document.getElementById("parent")
+// console.log(papa.nodeName);
+// console.log(papa.nodeType); // agr output 1 ain tou means HTML element hai agr 3 ain tou means junkartifact hai
+// console.log(papa.lastElementChild.nodeName); // last child ka node name 
+// var p = papa.lastElementChild
+// console.log(p.parentNode); // parent div ajaaiga iska
+// console.log(p.parentElement); // parent element ajaiga poora with childs
+
+
+
+
+
 
 
 
