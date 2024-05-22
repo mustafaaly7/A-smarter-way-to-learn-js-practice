@@ -267,19 +267,19 @@
 //  var result ; 
 //     if( operator == "+"){
 //     result = num1 + num2 
-    
+
 //  }
 //  else if( operator == "-"){
 //     result = num1 - num2 
-    
+
 //  }
 //  else if ( operator == "*"){
 //     result = num1 * num2 
-    
+
 //  }
 //  else if( operator == "/"){
 //     result = num1 / num2 
-    
+
 //  }else{
 //     alert("Enter Correct Operator")
 //  }
@@ -353,7 +353,7 @@
 //         if(i == position){
 //             arr[i]= value
 //         }
-    
+
 // }
 // console.log(arr);
 
@@ -409,22 +409,22 @@
 // function calculateHypotenuse (){
 //     var base = +prompt("Enter Base")
 //     var Perpendicular = +prompt("Enter Perpendicular")
-  
+
 //     function square (x){
 //         return x * x;
 //     }
 //     var baseSquared = square(base)
 //     var PerpendicularSquared = square(Perpendicular)
-    
+
 //     var sum = baseSquared + PerpendicularSquared;
 //     var hypotenuse = Math.sqrt(sum)
 //     return hypotenuse;
-    
+
 //     }
-    
+
 //     var output = calculateHypotenuse();
 //     console.log(output);
-    
+
 
 
 // square and cubes 
@@ -478,7 +478,7 @@
 // // if(result ==  true){
 // //     console.log("working");
 // //     return result
-    
+
 // // }else{
 // //     console.log("not true");
 // //     return result
@@ -504,7 +504,7 @@
 // if(result ==  true){
 //     console.log("working");
 //     return result
-    
+
 // }else{
 //     console.log("not true");
 //     return result
@@ -536,7 +536,7 @@
 // console.log(output);
 
 // ----------------> Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. 
-  
+
 // function result(){
 //     var userInput = document.getElementById("input").value
 //     var words = userInput.split(" ")
@@ -597,7 +597,7 @@
 //         // console.log("The Area of Circle is " ,area);
 //         return area
 //     }
-    
+
 //     console.log("the circumference of a circle is : " + Math.floor(circumference)  + "\n The area of circle is :" , Math.round (calcArea(userInput)) );
 
 // }
@@ -690,7 +690,8 @@
 
 
 
-// THE DOM 18 march 2024
+// ------------------> THE DOM 18 march 2024(DOCUMENT OBJECT MODEL) <---------------------------
+
 // console.log(document.childNodes); // this will show junkifact aswell document means HTMl uske andar 2 child hote hain 
 // console.log(document.childNodes[1].childNodes); // ab iske output mai array ky andar text show krrha hai which is the space we made in html js usse bh element count krta hai 
 // -----> better than childnode which wont show junkifacts like doctype and text etc
@@ -738,12 +739,64 @@
 // console.log(p.parentElement); // parent element ajaiga poora with childs
 
 
+// ----------------> setting getting and finding attributes 
+
+// function showpass(){
+//     var input = document.getElementById("input")
+//     // input.placeholder = "Enter Your Name" // you can set attribute like that aswell
+//     // -----> OR 
+
+//     // input.setAttribute("placeholder","Enter your nick") // or like this aswell
+
+//     //------->to find out if that tag or element has attribute or not 
+
+//     // input.hasAttribute("placeholder") // it will return true if it has attribute with that name or false if not 
+//     // console.log( input.hasAttribute("placeholder")); // u can also find it like that
+//     // var bool =  input.hasAttribute("placeholder")
+//     // console.log(bool);
+
+//     // -----> to get attribute
+
+//     // var att =input.getAttribute("placeholder")
+
+//     // console.log(att); // it will show null if it wont have attribute
+
+// // ------> setting attribute thru that 
+
+//     // input.setAttribute("type","password")
+
+// }
 
 
 
+// ---->Creating a  new tag or element completely using DOM / js
 
 
+// var parent = document.getElementById("parent")
 
+// var h1ele = document.createElement("h1")
+
+// h1ele.innerHTML = "HELLO BROSSKI" // passing value by attribute
+
+// h1ele.id = "child" // setting id attribute with value
+
+// --OR u can also use for giving id 
+
+// h1ele.setAttribute("id", "child")// seting id attribute with value
+
+// parent.appendChild(h1ele) // this will add that element to that parent div we always have extra div if u want to create an element in js using DOM
+
+// // u can style that element u created from here from html inline styling or from css by id u just gave above in line 767 and 769
+
+// h1ele.style.color = "lightGreen" // styling from here
+
+// DOM class topics completed 
+// gotta practice more on DOM (document object model)
+// ---------------------------------------------------------------------------------------
+
+// ----------> Rough practice 
+// console.log(parent.children[0]);
+// console.log(document.children[0].children[1].children[0].children[0].innerHTML = "No"); // changing innerHTML of a tag we created using DOM
 
 
 

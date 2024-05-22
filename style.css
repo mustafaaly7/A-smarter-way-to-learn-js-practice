@@ -28,3 +28,10 @@ width: 100px;
     height: 20px;
 }
 
+#child{ 
+background-color: blue;
+} /* styling that element we just created using DOM */
+
+
+
+
