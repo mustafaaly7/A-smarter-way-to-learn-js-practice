@@ -797,6 +797,48 @@
 // ----------> Rough practice 
 // console.log(parent.children[0]);
 // console.log(document.children[0].children[1].children[0].children[0].innerHTML = "No"); // changing innerHTML of a tag we created using DOM
+// document.write("<h1> hello")
+
+
+function add(){
+var parent = document.getElementById("parent")
+var input = document.getElementById("input").value
+// console.log(parent.children + input);
+var h1el = document.createElement("h1")
+h1el.innerHTML = input
+// console.log(h1el);
+parent.appendChild(h1el)
+h1el.style.color = "white"
+h1el.setAttribute("id", "h1")
+
+var btn = document.createElement("button")
+btn.innerHTML = "delete"
+btn.onclick = del()
+parent.appendChild(btn)
+
+
+}
+
+function del(){
+    var el = document.getElementById("h1").innerHTML
+    // el.split()
+    console.log(el.split());
+    // el[h1].remove()
+    // el.remove()
+    // console.log("hello");
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

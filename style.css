@@ -34,4 +34,26 @@ background-color: blue;
 
 
 
+#parent{
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    margin: 87px 254px 72px 310px;
+    border: 1px solid;
+    background-color: green;
+}
+
+#parent h1{
+    font-size: 50px;
+}
+#parent button{
+    width: 9%;
+    height: 40px;
+}
+#input{
+    width: 90%;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+}
 
