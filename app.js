@@ -800,48 +800,72 @@
 // document.write("<h1> hello")
 
 
-function add(){
-var parent = document.getElementById("parent")
-var input = document.getElementById("input").value
-// console.log(parent.children + input);
-var h1el = document.createElement("h1")
-h1el.innerHTML = input
-// console.log(h1el);
-parent.appendChild(h1el)
-h1el.style.color = "white"
-h1el.setAttribute("id", "h1")
+// function add(){
+// var parent = document.getElementById("parent")
+// var input = document.getElementById("input").value
+// // console.log(parent.children + input);
+// var h1el = document.createElement("h1")
+// h1el.innerHTML = input
+// // console.log(h1el);
+// parent.appendChild(h1el)
+// h1el.style.color = "white"
+// h1el.setAttribute("id", "h1")
 
-var btn = document.createElement("button")
-btn.innerHTML = "delete"
-btn.onclick = del()
-parent.appendChild(btn)
+// var btn = document.createElement("button")
+// btn.innerHTML = "delete"
+// btn.onclick = del()
+// parent.appendChild(btn)
 
 
+// }
+
+// function del(){
+//     var el = document.getElementById("h1").innerHTML
+//     // el.split()
+//     console.log(el.split());
+//     // el[h1].remove()
+//     // el.remove()
+//     // console.log("hello");
+// }
+
+
+
+
+// -------------------> switch statement (use for comparison only and for other purpose use if else )
+// var age = 10;
+// switch (age){  // yahan variable pass hoga jispr check krna hai 
+//     case 20 : // yahan sirf single value pass hoti hai or ye strict compare krta hai  === wala 
+//         alert("you welcome")
+//         break  // break lgana important hai wrna ye pooora read krega 
+//         case 10: // ye wali true hogyi hai condition to ye default pr nh jaiga
+//             alert("HEYAAAA")
+//             break // break lgana important hai wrna ye pooora read krega 
+//         default: // default is like else if all the conditions are false then it is gonna run 
+//         alert("you're not welcome")
+//         break
+// }
+
+
+
+// -----------------> while loop (most programming languages have while loop)
+
+// var i = 0  // initiliazation bahir hoti hai jese for loop mai bh krskte hain andar bahir but iski bahir hi hoti hai 
+// while(i<10){ // condition ( will only run if it is true)
+//     // document.write("<h1>" + i)
+//     console.log(i); // block of statements
+// i++; // increment / decreament 
+// }
+
+
+// -----------------------> do while loop ( will run one time whether condition is true or not (not used much just for knowing ))
+
+var i = 0 ; // initiliazation outside
+do{ // do will take the block of statment
+    console.log(i);
+    i++ // increament /decrement aswell
 }
-
-function del(){
-    var el = document.getElementById("h1").innerHTML
-    // el.split()
-    console.log(el.split());
-    // el[h1].remove()
-    // el.remove()
-    // console.log("hello");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+while(i<5) // condition ky kb tk krna hai 
+// now it will run the block of statement first before check the codition cuz js run line by line
 
 
 
