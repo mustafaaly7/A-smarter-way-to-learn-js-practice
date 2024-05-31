@@ -859,15 +859,103 @@
 
 // -----------------------> do while loop ( will run one time whether condition is true or not (not used much just for knowing ))
 
-var i = 0 ; // initiliazation outside
-do{ // do will take the block of statment
-    console.log(i);
-    i++ // increament /decrement aswell
-}
-while(i<5) // condition ky kb tk krna hai 
+// var i = 0 ; // initiliazation outside
+// do{ // do will take the block of statment
+//     console.log(i);
+//     i++ // increament /decrement aswell
+// }
+// while(i<5) // condition ky kb tk krna hai 
 // now it will run the block of statement first before check the codition cuz js run line by line
 
 
+
+
+// ---->  reverse loop using while / for loops
+
+// var userInput = +prompt("enter a number")
+// for(var i = userInput ; i>=0; i--){
+//     console.log(i);
+// }
+
+
+// // var i = 10 
+// var i = userInput
+// while(i>=0){
+//     document.write("<h1>" + i + "</h1>")
+    // console.log(i);
+    
+    
+//     i--;
+
+// }
+// console.log("hello");
+
+
+
+
+// var arr = ["mustafa","haris",'sarim','sufyan']
+// // var i = 0
+// // while(i<arr.length){
+// //     console.log(arr[i]);
+// //     i++
+// // }
+
+
+// var i = arr.length-1
+// while(i>=0){
+//     console.log(arr[i]);
+//     i--
+// }
+
+
+
+
+
+
+// var arr =[99]
+// for(var i = 0 ; i<=10 ; i++){
+    
+//     // console.log(arr.push(i)); // adds the value in the end of array
+// // console.log(arr.unshift(i)); // adds the value at the begining of the array
+// // console.log(arr);
+
+
+// }
+
+
+
+// -------------> guess anumber challenge
+// ---------------> WITHOUT INPUT FIELD AND FUNCTION
+
+// var userInput = +prompt("Enter a number from 1-100")
+// var no = Math.floor(Math.random()*10)
+// // console.log(no);
+// if(userInput == no){
+//     document.write("<h1> You Won </h1>" + "<h1> The Number was " + no)
+// }else{
+//     document.write("<h1> Try again :( </h1>" + "<h1> The Number was " + no)
+
+// }
+
+
+
+// ----------------> with Input Field and function
+
+function game(){
+    // var userInput = +prompt("Enter a number from 1-100")
+    var userInput = document.getElementById("userInput")
+var no = Math.floor(Math.random()*10)
+// console.log(no);
+if(userInput.value == no){
+    document.write("<h1> You Won </h1>" + "<h1> The Number was " + no)
+}else{
+    document.write("<h1> Try again :( </h1>" + "<h1> The Number was " + no)
+
+}
+
+
+
+}
 
 
 
