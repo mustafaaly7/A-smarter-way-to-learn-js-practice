@@ -1200,18 +1200,29 @@
 // in browser object will be shown as in alphabetical order like a - z
 
 
+// we can also check if that object has that property 
+// how?
 
+// var object = {
+//     name : "mustafa",
+//     age : 20,
+//     id : 187116
+// }
+// var check = "id" in object
+// console.log(check); // it will show true and false 
 
+// -------------------------------------------X ------------------------------------- x---------------------
 
-
-
+// Even array we create in objects are defined data cuz we give it name and put in specific property under its name 
+// var obj ={} // empty object contains value true 
+// console.log(obj);
+// var arr =[] // empty array contains value true 
 
 
 // ------------------------------------X---------------------------------------X--------------------------X
 
 
-
-
+// dated : 3 june 2024 // free hand practice  of Objects abt why it is collection of defined data 
 
 
 
