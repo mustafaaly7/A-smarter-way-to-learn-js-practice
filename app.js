@@ -882,9 +882,9 @@
 // var i = userInput
 // while(i>=0){
 //     document.write("<h1>" + i + "</h1>")
-    // console.log(i);
-    
-    
+// console.log(i);
+
+
 //     i--;
 
 // }
@@ -914,7 +914,7 @@
 
 // var arr =[99]
 // for(var i = 0 ; i<=10 ; i++){
-    
+
 //     // console.log(arr.push(i)); // adds the value in the end of array
 // // console.log(arr.unshift(i)); // adds the value at the begining of the array
 // // console.log(arr);
@@ -1141,9 +1141,9 @@
 //         css: 50,
 //         js: 80
 //     },
-    // we can also create function inside object which is known as method 
-    // function inside object is called method
-    //function outside object is called function 
+// we can also create function inside object which is known as method 
+// function inside object is called method
+//function outside object is called function 
 
 //     calcMarks: function (name) { // we can also pass argument and parameters in it 
 //         // console.log(this); // what does this do ? It will get you the object jisme function mojud hai 
@@ -1224,7 +1224,7 @@
 
 // dated : 3 june 2024 // free hand practice  of Objects abt why it is collection of defined data 
 
- // WE CREATED AN OBJECT NAMED SCHOOL WITH MULTIPLE OBJECTS INSIDE KEY NAMED STUDENT1-2 ETC WITH KEY INSIDE WITH NAME ID DOB AND COURSES
+// WE CREATED AN OBJECT NAMED SCHOOL WITH MULTIPLE OBJECTS INSIDE KEY NAMED STUDENT1-2 ETC WITH KEY INSIDE WITH NAME ID DOB AND COURSES
 // var schoolobj = {
 //     student1 : {
 //         name:"Mustafa Ali",
@@ -1256,7 +1256,7 @@
 //         dob:"15-4-2001",
 //         courses :["HTML","CSS","JS"]
 //     },
-    
+
 // }
 
 // console.log(schoolobj);
@@ -1267,7 +1267,7 @@
 
 // for(key in schoolobj.student5){ // this will get all the  objects then student5 specifically 
 //     console.log(schoolobj.student5[key]); // this will print each key values one by one 
-   
+
 
 
 // }
@@ -1277,7 +1277,7 @@
 // console.log("Courses:"); // courses heading 
 
 
- // this will give us an array but how do we print array values on by one?
+// this will give us an array but how do we print array values on by one?
 //  for(var i = 0  ; i< schoolobj.student5.courses.length ; i++){
 //     console.log( i  +". "+ schoolobj.student5.courses[i]);
 // }
@@ -1297,6 +1297,157 @@
 // //NOW ADD THE VALUE IN THE BEGINNING 
 // schoolobj.student5.courses.unshift("Basic Concept of Programming") // this will add the value in 0 index
 // console.log(schoolobj.student5.courses);
+
+
+// -----------------------------------------X----------------------------------------------X------------------X
+
+//LETS PRINT THAT ARRAY WHICH IS IN OBJECT BY MAKING A METHOD INSIDE THAT OBJECT (AKA FUNCTION CREATED INSIDE OBJ IS KNOWN AS METHOD WHICH RETURNS A VALUE )
+
+// var parent = document.getElementById("parent") // get the element div which is empty in Js
+
+// var schoolobj = {
+//     student1 : {
+//         name:"Mustafa Ali",
+//         id:187116,
+//         dob:"28-03-2004",
+//         courses :["HTML","CSS","JS"]
+//     },
+//     student2 : {
+//         name: "Haris Shaikh",
+//         id:2315347,
+//         dob:"24-6-2003",
+//         courses :["HTML","CSS","JS"]
+//     },
+//     student3 : {
+//         name:"sufyan Khan",
+//         id:187119,
+//         dob:"1-4-2003",
+//         courses :["HTML","CSS","JS"]
+//     },
+//     student4 : {
+//         name:"Saarim Ali",
+//         id:187012,
+//         dob:"27-3-2005",
+//         courses :["HTML","CSS","JS"]
+//     },
+//     student5 : {
+//         name:"Ashar",
+//         id:172201,
+//         dob:"15-4-2001",
+//         courses :["HTML","CSS","JS"]
+//     },
+
+// //CREATING A METHOD IN JS 
+
+//     printCourses : function(){
+//         for(var i = 0 ; i<this.student5.courses.length ; i++){ // USING FOR LOOP CUZ ITS ARRAY 
+//             var li = document.createElement('li') // CREATING A ELEMENT LI
+//             li.innerHTML = this.student5.courses[i] // FOR EACH ARRAY INDEX CREATE A NEW LI AND MADE THAT INNERHTML ARRAY VALUE
+//             li.style.fontSize = "32px" // SOME STYLING
+//             parent.appendChild(li) // APPENDING FOR FINAL RESULT
+//         }
+//     }
+
+// }
+
+// console.log();
+// schoolobj.printCourses() // CALLING THAT METHOD SPECIFICALLY CREATED FOR THAT OBJ 
+//THATS WHAT WE CALL A METHOD 
+
+
+// --------------------------------------X--------------------------------------------------X----------------X
+
+// CAN WE PRINT THE KEY VALUES IN HTML AS WELL? 
+//YES WE CAN 
+//HOW ? 
+
+//LETS ADD ANOTHER METHOD IN THAT OBJECT 
+
+
+
+// parent = document.getElementById("parent") // get the element div which is empty in Js
+
+// var schoolobj = {
+//     student1: {
+//         name: "Mustafa Ali",
+//         id: 187116,
+//         dob: "28-03-2004",
+//         courses: ["HTML", "CSS", "JS"]
+//     },
+//     student2: {
+//         name: "Haris Shaikh",
+//         id: 2315347,
+//         dob: "24-6-2003",
+//         courses: ["HTML", "CSS", "JS"]
+//     },
+//     student3: {
+//         name: "sufyan Khan",
+//         id: 187119,
+//         dob: "1-4-2003",
+//         courses: ["HTML", "CSS", "JS"]
+//     },
+//     student4: {
+//         name: "Saarim Ali",
+//         id: 187012,
+//         dob: "27-3-2005",
+//         courses: ["HTML", "CSS", "JS"]
+//     },
+//     student5: {
+//         name: "Ashar",
+//         id: 172201,
+//         dob: "15-4-2001",
+//         courses: ["HTML", "CSS", "JS"]
+//     },
+
+//     //CREATING A METHOD IN JS 
+
+//     printCourses: function () {
+//         for (var i = 0; i < this.student5.courses.length; i++) { // USING FOR LOOP CUZ ITS ARRAY 
+//             var li = document.createElement('li') // CREATING A ELEMENT LI
+//             li.innerHTML = this.student5.courses[i] // FOR EACH ARRAY INDEX CREATE A NEW LI AND MADE THAT INNERHTML ARRAY VALUE
+//             li.style.fontSize = "32px" // SOME STYLING
+//             parent.appendChild(li) // APPENDING FOR FINAL RESULT
+//         }
+//     },
+// //LETS CREATE A METHOD THAT WILL ONLY PRINT KEY VALUES MEANS ONLY NAME VALUE WHICH IS MUSTAFA AND NOT NAME : MUSTAFA
+//     printStudent: function () {
+//         for (key in schoolobj.student1) {
+//             var li = document.createElement("li")
+//             li.innerHTML = schoolobj.student1[key]
+//             li.style.fontSize = "32px"
+//             parent.appendChild(li)
+//         }
+//     },
+    
+//     // LETS CREATE ANOTHER METHOD WHICH WILL PRINT STUDENT 1 OBJECT DEFINED DATA WITH BOTH KEY AND VALUE (WHOLE PROPERTY) 
+//     printStudentkey_value: function () {
+//         for (key in schoolobj.student1) {
+//             if (this.student1.hasOwnProperty(key)){ // has own property check if that has that property or not 
+//                 var li = document.createElement("li")
+//                 li.innerHTML = key + ": " + schoolobj.student1[key]
+//                 li.style.fontSize = "32px"
+//                 parent.appendChild(li)
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+// schoolobj.printStudent() // for only property value(only value no key name)
+
+// schoolobj.printStudentkey_value() // for both property name and value (key and value)
+
+
+// ---------------------X--------------------------------X-----------------------------------------------X
+
+
+
+
+
+
 
 
 
