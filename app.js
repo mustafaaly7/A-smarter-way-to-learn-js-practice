@@ -941,21 +941,289 @@
 
 // ----------------> with Input Field and function
 
-function game(){
-    // var userInput = +prompt("Enter a number from 1-100")
-    var userInput = document.getElementById("userInput")
-var no = Math.floor(Math.random()*10)
-// console.log(no);
-if(userInput.value == no){
-    document.write("<h1> You Won </h1>" + "<h1> The Number was " + no)
-}else{
-    document.write("<h1> Try again :( </h1>" + "<h1> The Number was " + no)
+// function game(){
+//     // var userInput = +prompt("Enter a number from 1-100")
+//     var userInput = document.getElementById("userInput")
+// var no = Math.floor(Math.random()*10)
+// // console.log(no);
+// if(userInput.value == no){
+//     document.write("<h1> You Won </h1>" + "<h1> The Number was " + no)
+// }else{
+//     document.write("<h1> Try again :( </h1>" + "<h1> The Number was " + no)
 
-}
+// }
 
 
 
-}
+// }
+
+
+
+
+// ------------------------------------X -------------------------------------------- X
+// Dated : 1 june 2024
+
+// JS IS SYNCHRONAS MEANS LINE BY LINE READ KREGA AND WAIT NH KRTA
+// ASYNCHRONAS MEANS WAIT KRANA CODE KO WE CAN MAKE OUT JS AYNCHRONAS
+// FOR THAT WE CAN USE setTimeout() function to make our code wait for some specific time
+
+
+// setTimeout(function name without paranthesis i.e (), time in milliseconds means 1000 milliseconds = 1 sec )
+
+// function foo() {
+//     console.log("hello2");
+// }
+
+
+// console.log("hello1");
+// setTimeout(foo, 2000) // means call foo function after 2 sec wait
+//NOW JS IS SYNCHRONAS MEANS YE CODE READ KRTA RAHEGA AND WAIT KO IGNORE KRDEGA AND THE SETTIMEOUT CODE WILL RUN AFTER TIME BHALAY WOH BEECH MAI AIN PHLY AAIN
+// WE CAN ALSO CREATE DIRECT FUNTION IN SET TIMEOUT USKA SYNTAX HOGA
+// setTimeout(function(){
+//     console.log("hello bois");
+// } , 5000) // means 5 sec baad
+
+// setTimeout(function () {
+//     console.log("hello 2from direct fuction inside setTimeout");
+// }, 2000)
+
+// console.log("hello3");
+// console.log("hello4");
+
+// --------------------X---------------------X --------------------------------X --------------------------X ------------X
+
+
+// -------------------> SetInterval() // METHOD
+// What does it do??  it repeat the function after the given time u gave
+
+//SYNTAX ?
+
+
+// setInterval(function name without paranthesis  / or direct create function without function name , time in milliseconds if.e 1000milliseconds = 1 sec )
+
+
+// --------------> Now try it with direct creating function inside it without function name
+// And Inside a variable
+
+
+// var interval = setInterval(function () {
+//     console.log("Hello after every 1 sec");
+// }, 1000)
+
+// it will run without needing to print it or anything / cuz variable store huwa or ye run krna start krdega
+
+// --------------> Now try it with direct creating function inside it without function name
+// Without variable
+
+
+// setInterval(function () {
+//     console.log("Hello after every 1 sec");
+// }, 1000)
+
+
+
+// --------------> Now try it with function outside interval
+
+// function print() {
+//     console.log("Hello after every 1 sec");
+// }
+
+
+// setInterval(print, 1000)
+
+
+
+// --------------------X-------------------X ------------------------------X -------------------X
+// ------------> HOW TO STOP INTERVAL??
+// we use clearInterval() Method for that
+// -----------------> SYnTAX
+// clearInterval(var name jisme set interval store kraya hai )
+
+// Now lets try it
+
+
+// var interval = setInterval(function () {
+//     console.log("Hello after every 1 sec");
+// }, 1000)
+
+
+// clearInterval(interval) // it will stop that interval we can also make it stop on button 
+
+
+// ---------------------x ------------------------------X ----------------------------------X -------------------- X
+// dated : 2-june -2024
+
+
+// Objects ?? 
+// Objects Is king in javascript / everything in js is object 
+// object is a collection of data just like arrray
+// var stdArr = ["Pakistan", 'karachi', "john", 20] // this is undefined data cuz array store undefined data while object stores defined data
+//if someone looks at that array without knowing what pakistan karachi and 20 is its undefined thats why we use object 
+// OBJECT IS USE FOR DEFINED DATA COLLECTION
+//Syntax for object 
+
+// var stdObj = {                  // Object name = object bracket 
+//     name: "john",              // key name which in array is index but in object it is defined as key name and john is key value
+//     age: 20,
+//     city: "karachi",           // they both together in html is known as attribute and has key value relationship 
+//     country: "pakistan"       // and to terminate it we use , comma / we can store any type of data in it such as object function string array number etc every data type 
+
+// }
+
+// console.log(stdObj); // it will get the entire obj like name : john etc with key and value which in array is index and value
+// console.log(stdArr); // it will get the entire array with index and value like 0 : pakistan etc
+
+
+// how to get only name value ??
+// we use two methods to get only name key value and not anything else
+
+// array notation method
+
+// console.log(stdObj["name"]); // object name array bracket "key name " in string
+// like we do in array
+// console.log(stdArr[0]); // array name array bracket then inside index number
+
+
+// 2. Object Notation
+
+
+// console.log(stdObj.name); // object name . key name
+
+
+// now can we print the value 1 by 1 like we do in array using for loop ?
+
+
+
+// for array we use for loop
+// for (var i = 0; i < stdArr.length; i++) {
+//     console.log(stdArr[i]); // it will print one by one in index value given as var i
+
+// }
+
+// WE CANT USE FOR LOOP IN OBJECT
+// WE USE FOR IN LOOP IN OBJECT TO PRINT OBJECT KEY VALUE ONE BY ONE
+
+//syntax
+
+// for (var key in stdObj) {   // created a variable in loop named as key
+//     console.log(stdObj[key]); // then print the key{variable} in object key value to get the key values
+//     console.log(key); // this loop is running inside object so it will print key name if we only print the var created in loop named as key
+// }
+
+
+
+//  want only name and age?
+// use continue and break method but mostly used is continue which  ignore the condition if true
+
+// for (var propName in stdObj) {
+//     if (propName == "city") {
+//         continue
+//     }
+//     if (propName == "country") {
+//         continue
+//     }
+//     console.log(stdObj[propName]);
+
+// }
+// it is same as used in for loop
+
+
+
+// now adding evertype of data in object
+// var stdObj = {
+//     name: "mustafa",                         // string
+//     age: 20,                                // number
+//     email: null,                            // null
+//     result: undefined,                        //undefined 
+//     courses: ["html", "css", "js"],         // array in object
+//     marks: {                                    // Object in object
+//         html: 70,
+//         css: 50,
+//         js: 80
+//     },
+    // we can also create function inside object which is known as method 
+    // function inside object is called method
+    //function outside object is called function 
+
+//     calcMarks: function (name) { // we can also pass argument and parameters in it 
+//         // console.log(this); // what does this do ? It will get you the object jisme function mojud hai 
+//         // console.log(this.courses); // it will give u anything inside that object using this property
+//         // console.log("hello", name);
+//         var total = this.marks.css + stdObj.marks.html + this.marks.js  // we can do both this and object name 
+//         this.result = total; //  reinitialize the value of result which is key in that object using "this "
+//         return total
+//     }
+
+
+
+// }
+
+// console.log(stdObj.calcMarks()); // this is method object . property name () function name and paranthesis to call method that we creatd inside object
+// console.log(stdObj.result);
+// why it is showing undefined ??
+// we always have to "RETURN" the value inside the function that we created in object (known as user defined method )
+// after we use return it wont show us undefined in console cuz we returned that value 
+
+// -----------------------X---------------------------X-------------------------------------X
+
+
+// Now we reintialize the value of result key 
+
+// console.log(stdObj.result); // it will still show the value which we intialized in the begining why?
+
+
+// cuz we havent called our function and it didnt reinitialized the value yet so we have to call the function first in order to get the reinitialized value
+
+// stdObj.calcMarks() // calling our method 
+// console.log(stdObj.result); // so the value of result will be reinitialized else it will not 
+
+
+
+// -----------------------X---------------------------X-------------------------------------X
+
+// we can also reinitalize the value of the property inside our object
+
+// stdObj.age = 900 // reinitialized the value of result 
+// console.log(stdObj.age);
+
+
+// we can also delete the key and its value 
+
+// delete stdObj.age //  delted the key named age and its value 
+// console.log(stdObj); // now it wont show the value and its key named age in it 
+
+
+// we can also create the key nd its value 
+// stdObj.id = 187116 // created the key named id and assigned its value 
+// console.log(stdObj.id); // now it is in object 
+
+// in browser object will be shown as in alphabetical order like a - z
+
+
+
+
+
+
+
+
+
+// ------------------------------------X---------------------------------------X--------------------------X
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
