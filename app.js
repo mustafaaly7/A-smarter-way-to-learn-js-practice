@@ -1225,39 +1225,39 @@
 // dated : 3 june 2024 // free hand practice  of Objects abt why it is collection of defined data 
 
  // WE CREATED AN OBJECT NAMED SCHOOL WITH MULTIPLE OBJECTS INSIDE KEY NAMED STUDENT1-2 ETC WITH KEY INSIDE WITH NAME ID DOB AND COURSES
-var schoolobj = {
-    student1 : {
-        name:"Mustafa Ali",
-        id:187116,
-        dob:"28-03-2004",
-        courses :["HTML","CSS","JS"]
-    },
-    student2 : {
-        name: "Haris Shaikh",
-        id:2315347,
-        dob:"24-6-2003",
-        courses :["HTML","CSS","JS"]
-    },
-    student3 : {
-        name:"sufyan Khan",
-        id:187119,
-        dob:"1-4-2003",
-        courses :["HTML","CSS","JS"]
-    },
-    student4 : {
-        name:"Saarim Ali",
-        id:187012,
-        dob:"27-3-2005",
-        courses :["HTML","CSS","JS"]
-    },
-    student5 : {
-        name:"Ashar",
-        id:172201,
-        dob:"15-4-2001",
-        courses :["HTML","CSS","JS"]
-    },
+// var schoolobj = {
+//     student1 : {
+//         name:"Mustafa Ali",
+//         id:187116,
+//         dob:"28-03-2004",
+//         courses :["HTML","CSS","JS"]
+//     },
+//     student2 : {
+//         name: "Haris Shaikh",
+//         id:2315347,
+//         dob:"24-6-2003",
+//         courses :["HTML","CSS","JS"]
+//     },
+//     student3 : {
+//         name:"sufyan Khan",
+//         id:187119,
+//         dob:"1-4-2003",
+//         courses :["HTML","CSS","JS"]
+//     },
+//     student4 : {
+//         name:"Saarim Ali",
+//         id:187012,
+//         dob:"27-3-2005",
+//         courses :["HTML","CSS","JS"]
+//     },
+//     student5 : {
+//         name:"Ashar",
+//         id:172201,
+//         dob:"15-4-2001",
+//         courses :["HTML","CSS","JS"]
+//     },
     
-}
+// }
 
 // console.log(schoolobj);
 //TO GET ONLY ASHAR WE USE 
@@ -1265,19 +1265,38 @@ var schoolobj = {
 
 // lets try for in loop inside student5
 
-for(key in schoolobj.student5){ // this will get all the  objects then student5 specifically 
-    console.log(schoolobj.student5[key]); // this will print each key values one by one 
+// for(key in schoolobj.student5){ // this will get all the  objects then student5 specifically 
+//     console.log(schoolobj.student5[key]); // this will print each key values one by one 
    
-}
-console.log("Courses:"); // courses heading 
+
+
+// }
+
+
+
+// console.log("Courses:"); // courses heading 
+
 
  // this will give us an array but how do we print array values on by one?
- for(var i = 0  ; i< schoolobj.student5.courses.length ; i++){
-    console.log( i  +". "+ schoolobj.student5.courses[i]);
-}
+//  for(var i = 0  ; i< schoolobj.student5.courses.length ; i++){
+//     console.log( i  +". "+ schoolobj.student5.courses[i]);
+// }
 // AS COURSES IS AN ARRAY INSIDE STUDENT5 OBJECT WHICH IS INSIDE SCHOOL OBJECT 
 // WE NEED TO TARGET STUDENT5 OBJECT BY GETTING SCHHOOL OBJ THEN WE GET COURSES OBJ THEN USE FOR LOOP FOR ARRAY WITH VAR i IN INDEX [i] 
 
+
+
+
+// NOW CAN WE ADD VALUE IN THAT ARRAY ?
+//YES 
+// schoolobj.student5.courses.push("nodejs") // this will add the value in the end 
+// console.log(schoolobj.student5.courses);
+
+
+
+// //NOW ADD THE VALUE IN THE BEGINNING 
+// schoolobj.student5.courses.unshift("Basic Concept of Programming") // this will add the value in 0 index
+// console.log(schoolobj.student5.courses);
 
 
 
