@@ -1445,6 +1445,35 @@
 
 
 
+// var arr = [10,20,40,50];
+// var arr2 =[10,20,30,40,50]
+// var value = arr[0]+arr2[1];
+// arr.splice(2,0,value) // adding the value in 2 index splice (index , delete kitne krne uske baad , value jo hai , value jo hai and so on uske baad say )
+// console.log(arr);
+
+
+// -------------------------------------------X ----------------------------------------- X
+// freeHand Js 
+var obj = {
+    arr : [30,40,50],
+    name :"mustafa"
+    
+
+}
+
+console.log(obj.arr[2]); // object notation
+console.log(obj["name"]); // array notation
+
+
+for(var key in obj){
+    console.log(obj[key],key);
+}
+
+
+
+
+
+
 
 
 
