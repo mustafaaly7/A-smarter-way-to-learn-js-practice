@@ -1454,29 +1454,65 @@
 
 // -------------------------------------------X ----------------------------------------- X
 // freeHand Js 
-var obj = {
-    arr : [30,40,50],
-    name :"mustafa"
+// var obj = {
+//     arr : [30,40,50],
+//     name :"mustafa"
     
 
-}
+// }
 
-console.log(obj.arr[2]); // object notation
-console.log(obj["name"]); // array notation
-
-
-for(var key in obj){
-    console.log(obj[key],key);
-}
+// console.log(obj.arr[2]); // object notation
+// console.log(obj["name"]); // array notation
 
 
+// for(var key in obj){
+//     console.log(obj[key],key);
+// }
 
 
 
 
 
 
+// -------------------------------VERY IMPORTANT PART -----------
 
 
 
 
+
+
+
+
+// var obj = {
+//     arr : [99,[199,299,399],499],
+//     arr1 : [99,[1199,2199,3199],4199],
+//     arr2 : [99,[1299,2299,3299],4299],
+//      obj2:{
+// name : "mustafa",
+// marks :99
+//     }
+// }
+
+
+
+// for(var key in obj){
+//     console.log(obj[key]); // prints     arr : [99,[199,299,399],499],
+
+//     for(var i = 0 ; i<obj[key].length ; i++){ //this will print each array value one by one i.e 99
+//         console.log(obj[key][i]);
+//         for(var j = 0 ; j<obj[key][i].length ; j++){  // then prints multi dimensional array i.e[199,299,399]
+//             console.log(obj[key][i][j]);
+//         }
+//     }
+
+// //phr ye j wale for loop say bahir aiga then arr1 pr jaiga then arr2 pr and so on
+
+// }
+
+
+
+
+// //this will print object in object ki values only no key name 
+// for(var propname in obj.obj2){
+//     console.log(obj.obj2[propname]);
+// }
