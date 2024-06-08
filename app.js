@@ -1623,34 +1623,110 @@
 
 
 
+// CONSTRUCTOR IN JS 
+
+// What is Constructor ? 
+// constructor is a blueprint of object on how u want it to be or more like a structure to shape your object totally
+
+// FOR example if the guy has to design the building of 20 floors he can do it by making one floor and implying the same floor properties on the remaining 19 cuz they all similar 
+// in other word making the pillars of the object is called constructor in js 
+
+
+// CONSTRUCTOR SYNTAX
+
+
+// function Std(name,age,email,id){   // function ky name ka first alphabet capital mai krne say constructor bnjata hai 
+//     this.name = name // this.name means in this object create a property named "name" with its value dynammic coming from argument 
+//     this.age = age // so on 
+//     this.email =email
+//     this.id = id 
+
+//     // u can also create method in it 
+//     this.fullName = function(){
+//         return `${this.name} ${this.age}`
+//     }
+// }
+
+
+
+// now create a function from that constructor / blueprint
+
+// var std1 = new Std("mustafa",21,null,187116) // all the argument will be the property value 
+// new keyword is must cuz it means new instance or object
+
+// if we say that date is a constructor we wont be wrong cuz we use new while making a date 
+
+
+// console.log(std1); // this wil give us the whole object 
+
+//only want name and its value now? 
+// console.log(std1.name); // u can use object notation 
+// console.log(std1["name"]); // u cna use array notation for that 
+// now get the function on console
+
+// console.log(std1.fullName()); // this is method (function inside object is called method i.e push pop slice spice etc)
+
+// but for dynamic use array notation cuz object notation is for static 
 
 
 
 
+// Now lets create ARRAY OF OBJECTS And map it on UI
+// what is mapping of data? To show the dynamic Js data on UI 
 
 
 
+// FIRST DOING IT WITH Constructor 
 
 
 
+function Std(name,age,email,id){   // function ky name ka first alphabet capital mai krne say constructor bnjata hai 
+    this.name = name // this.name means in this object create a property named "name" with its value dynammic coming from argument 
+    this.age = age // so on 
+    this.email =email
+    this.id = id 
+
+    // u can also create method in it 
+    this.fullName = function(){
+        return `${this.name} ${this.age}`
+    }
+}
 
 
+var std1 = new Std("Mustafa Ali",20 , "mustafaaaly27@gmail.com",187116) // new keyword is must cuz it means new instance or object
+var std2 = new Std("Ahmed",19 , "ahmed214@gmail.com",187214)
+var std3 = new Std("Asim",22 ,undefined,187123)
+var std4 = new Std("Sabeeh",25 , null,187119 )
 
 
+// now what is array of objects ? to store the object in an array is called array of object 
+// we learned that we can store any data type in array so we can store object in array aswell  
 
 
+var stdArr = [std1,std2,std3,std4]
+// console.log(stdArr);
 
 
+// NOW WE WILL LEARN SOMETHING EASIER THAN DOM TO CREATE ELEMENT INTO HTML USING Js 
+// known as backtick technique to concede 
+
+// now lets map it into UI table that we created on our HTML file  
+var tbody = document.getElementById("tbody")
+// lets use for loop
+for(var i= 0 ; i< stdArr.length; i++){
+    console.log(stdArr[i].name);
+    tbody.innerHTML += `<tr>
+            <td>${stdArr[i].name}</td>
+            <td>${stdArr[i].age}</td>
+            <td>${stdArr[i].email}</td>
+            <td>${stdArr[i].id}</td>
+        </tr>` // now it wont append and overwrite till the last index object 
+        // to append all the values so the previous one wont get remove or replace /overwrite 
+        // use tbody.innerHTML +=
+}
 
 
-
-
-
-
-
-
-
-
+//now it has become dynamic and we did that using constructor object 
 
 
 
