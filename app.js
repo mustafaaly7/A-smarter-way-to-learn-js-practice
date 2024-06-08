@@ -1680,7 +1680,7 @@
 
 
 
-function Std(name,age,email,id){   // function ky name ka first alphabet capital mai krne say constructor bnjata hai 
+function Std(name,age,email,id,address){   // function ky name ka first alphabet capital mai krne say constructor bnjata hai 
     this.name = name // this.name means in this object create a property named "name" with its value dynammic coming from argument 
     this.age = age // so on 
     this.email =email
@@ -1690,6 +1690,7 @@ function Std(name,age,email,id){   // function ky name ka first alphabet capital
     this.fullName = function(){
         return `${this.name} ${this.age}`
     }
+    this.address = address
 }
 
 
@@ -1698,6 +1699,8 @@ var std2 = new Std("Ahmed",19 , "ahmed214@gmail.com",187214)
 var std3 = new Std("Asim",22 ,undefined,187123)
 var std4 = new Std("Sabeeh",25 , null,187119 )
 
+// what if we wont pass one property value on argument ?
+// console.log(std4); // it will return the value that we didnt give as undefined 
 
 // now what is array of objects ? to store the object in an array is called array of object 
 // we learned that we can store any data type in array so we can store object in array aswell  
@@ -1727,6 +1730,21 @@ for(var i= 0 ; i< stdArr.length; i++){
 
 
 //now it has become dynamic and we did that using constructor object 
+
+// Backticks are used to create the template literal.
+// ${} is used to insert values from the stdArr array into the HTML string.
+
+// ` `  backtick also lets you to break line but in "" u cant break line in a string but in `` u can 
+
+// THEORY 
+// Template Literals:
+
+// Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.
+// Syntax: Backticks (`) enclose the template, and expressions are embedded using ${}.
+// Expression Interpolation:
+
+// This is the process of embedding expressions inside template literals. The expressions inside ${} are evaluated, and their results are included in the final string.
+
 
 
 
