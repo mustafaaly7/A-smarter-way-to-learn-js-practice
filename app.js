@@ -1516,3 +1516,143 @@
 // for(var propname in obj.obj2){
 //     console.log(obj.obj2[propname]);
 // }
+
+
+// ------------------------------------------X--------------------------------------X--------------
+// DATED : 8 june 2024 saturday
+
+// Today's saylani class work that i did in lab 
+
+
+// how to concede two variable easily?? 
+//here's how u can do it 
+
+// SYNTAX
+// var firstName = "Mustafa"
+// var lastName = "Ali"
+// var fullName = `My Full name is ${firstName} ${lastName}` // console wala button  plus $ then {} this will allow u to add variable in a string `cuz this is used for string  `
+// console.log(fullName);
+
+// we can also add elements in js soo easily instead of using DOM (document .get elements etc)
+// how ?
+
+//SYNTAX
+//  created an empty div in HTML 
+
+// var parent = document.getElementById("parent")
+// parent.innerHTML = <h1 class = "heading"> Hello world </h1> // this will append the tag or element in html 
+// now the class we gave of heading we can style it using css
+// doing it on css
+// did it turned it into green
+
+
+// can we make it dynamic ?? by giving it the value user enter or in a variable ?
+// yes we can
+//SYNTAX 
+// var userInput = prompt("Enter Anything")
+// parent.innerHTML = `<h1> ${userInput} </h1> ` // same concept as we use in firstName and lastName for 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------X------------------------------------------X----------------------------X
+// WHAT IS ARRAY OF OBJECTS?
+
+// An array that contains Objects is called Array of object and it is one of the most imp topic to learn 
+
+// we know that array can store any datatype so we can store object in it aswell 
+
+//lets see 
+
+// create multiple objects first with same properties 
+
+// var std1 = {
+//     name: "Mustafa",
+//     age: 20,
+//     id: 786,
+//     gender: Male,
+// }
+
+
+// var std2 = {
+//     name: "Ahmed",
+//     age: 21,
+//     id: 444,
+//     gender: Male,
+// }
+
+// var std3 = {
+//     name: "zakir",
+//     age: 25,
+//     id: 654,
+//     gender: Male,
+// }
+
+// // now lets store them in array and see 
+
+// var stdArr = [std1, std2, std3]
+// console.log(stdArr); // it will give us objects in an array 
+
+// console.log(stdArr[0].name); // this will get 0 indexed object's property name which is mustafa
+
+//how to get every object's name value only 
+// we use for loop 
+
+// SYNTAX ??
+
+
+// for (var i = 0; i < stdArr.length; i++) {
+//     console.log(stdArr[i].name);  // now this will give arr[0].name which is mustafa then stdArr[1].name which is ahmed and so on 
+//     //now lets try another property
+//     console.log(stdArr[i].age); // this will print all the objects age 1 by 1
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
