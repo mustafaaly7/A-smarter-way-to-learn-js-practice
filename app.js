@@ -1729,7 +1729,8 @@ for(var i= 0 ; i< stdArr.length; i++){
 }
 
 
-//now it has become dynamic and we did that using constructor object 
+//now it has become dynamic and we did that using constructor object  and now if make another obj and add it in array it will show it in table aswell
+
 
 // Backticks are used to create the template literal.
 // ${} is used to insert values from the stdArr array into the HTML string.
@@ -1744,6 +1745,72 @@ for(var i= 0 ; i< stdArr.length; i++){
 // Expression Interpolation:
 
 // This is the process of embedding expressions inside template literals. The expressions inside ${} are evaluated, and their results are included in the final string.
+
+
+// to check if the obj has that specific property or not 
+// var check = "gender" in std1;
+// console.log(check);
+
+// // another way to check is 
+// console.log(std1.hasOwnProperty("id"));
+
+// // to delete specific property we use 
+
+// delete std1.name
+
+// -------------------Constructor
+
+// ------ function ky name ka phly word or alphabet capital krdo tou woh constructor bnjata hai 
+// Constructor makes the standard for all the objects by giving them initial properties and values thru parameter and argument
+
+// function Stdobj(name , age){
+//     this.stdName = name
+//     this.stdAge = age
+// }
+
+// let me = new Stdobj("Mustafa" , 20)
+// console.log(me.stdAge);
+
+
+
+// what is window in js??
+// window is a global object which contain everything in js for example alert etc all the methods are inside window object 
+
+// we can also give new href using window and everything 
+// window.location.href("url jo bh hai ")
+// window.location.replace("url jo bh hai it will disabled the back button on your chrome tho ")
+// and alot more 
+
+// console.log(window.alert("Hello"));
+
+// instead of alert if we use 
+// window.alert("Hello this is also alert ") // it will mean the same 
+// window.console.log("This is console.log aswell") // everything in js is inside window
+
+
+// -------------------- Basic Java Script topics are almost completed don't forget to keep practicing them 
+
+
+// ----------------ADVANCE JAVASCRIPT CLASS 1 DATED: 30-june-2024
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
